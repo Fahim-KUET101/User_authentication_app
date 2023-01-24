@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        body {
+            background-color: blueviolet;
+        }
+            .btn-primary {
+        background-color: burlywood;
+    }
+
+    .px-3 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+</style>
+    <title>User Registration Page</title>
+</head>
+
+    <form method="POST" action="/" class="px-3" >
+        <div class="row mb-3">
+            <label for="name">Name:</label>
+            <div class="col">
+                <input type="text" name="name" id="name" placeholder="Insert your name" />
+            </div>
+
+        </div>
+
+        <div class="row mb-3">
+            <label for="email">Email</label>
+            <div class="col">
+                <input type="email" name="email" id="email" placeholder="Insert your email" required />
+            </div>
+
+        </div>
+        <div class="row mb-3">
+            <label for="password">Password</label>
+            <div class="col">
+                <input type="password" name="password" id="password" />
+            </div>
+
+        </div>
+        <div class="row mb-3">
+            <p>Gender:</p>
+            <div class="col">
+                <input type="radio" id="male" name="gender" value="male" />
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female" />
+                <label for="female">Female</label>
+            </div>
+
+        </div>
+        <br /><br />    
+    </form>
+    <a href="/login">
+        <button type="submit" class="btn btn-primary m-4">Login</button>
+    </a>
+</body>
+</html>

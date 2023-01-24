@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        body {
+            background-color: blueviolet;
+        }
+            .btn-primary {
+        background-color: burlywood;
+    }
+
+    .px-3 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+</style>
+    <title>User Form</title>
+</head>
+    <form method="POST" action="/login" class="px-3">
+        <div class="row mb-3">
+            <label for="email">Email</label>
+            <div class="col">
+                <input type="email" name="email" id="email" placeholder="email" />
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label for="password">Password</label>
+            <div class="col">
+                <input type="password" name="password" id="password" />
+            </div>
+        </div>
+        <input type="submit" value="Submit" class="btn btn-primary mt-2" />
+    </form>
+
+</body>
+</html>
